@@ -1,0 +1,67 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageFlashlight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="91dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar_disco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inactive" />
+
+    <SeekBar
+        android:id="@+id/seekbar_disco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_disco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFlashlight" />
+
+    <TextView
+        android:id="@+id/btn_disco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Turn on Disco Light?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar_disco" />
+
+    <TextView
+        android:id="@+id/stop_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="97dp"
+        android:gravity="center"
+        android:text="Click here to Stop Disco Light"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFlashlight" />
+
+</android.support.constraint.ConstraintLayout>
